@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -45,5 +46,6 @@ public class Timer : MonoBehaviour
         // Handle the "lost" condition
         Debug.Log("Time's up! You lost.");
         // Here you can add any logic you need to handle the player losing the game
+        SceneManager.LoadScene("Lose");
     }
 }
